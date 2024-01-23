@@ -1,5 +1,7 @@
 import { memo, useEffect } from 'react'
 
+import SideBar from 'components/SideBar'
+
 import useTitle from 'hooks/useTitle'
 
 import { ContainerBackground } from './styles'
@@ -14,7 +16,7 @@ const Home: React.FC = () => {
 
   return (
     <ContainerBackground>
-      <h1 className="text-white">Spotify</h1>
+      <SideBar />
     </ContainerBackground>
   )
 }

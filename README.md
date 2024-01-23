@@ -96,4 +96,5 @@ pnpm run dev
 ## Credits
 
 This is a fork of [https://github.com/TheSwordBreaker/vite-reactts-eslint-prettier](https://github.com/TheSwordBreaker/vite-reactts-eslint-prettier)
+
 # spotify-clone
