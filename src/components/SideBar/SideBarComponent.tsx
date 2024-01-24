@@ -10,6 +10,8 @@ import logo from 'assets/logo/logo-spotify.png'
 import {
   BackgrondContainer,
   BackgroundLibery,
+  CookiesStyles,
+  FontSize,
   ImageSize,
   TextColor,
 } from './styles'
@@ -37,18 +39,21 @@ const SideBar: React.FC = () => {
           </div>
           <BackgroundLibery className="d-flex flex-column mb-4">
             <h6 className="text-white pt-3 px-3">Crie sua primeira playlist</h6>
-            <span className="text-white pt-1 px-3 pb-3">
-              É fácil, vamos te ajudar
-            </span>
+            <FontSize className="text-white pt-1 px-3 pb-3">
+              É fácil, vamos te ajudar.
+            </FontSize>
           </BackgroundLibery>
           <BackgroundLibery className="d-flex flex-column">
             <h6 className="text-white pt-3 px-3">
               Que tal seguir um podcast novo?
             </h6>
-            <span className="text-white pt-1 px-3 pb-3">
-              Avisaremos você sobre novos episódios
-            </span>
+            <FontSize className="text-white pt-1 px-3 pb-3">
+              Avisaremos você sobre novos episódios.
+            </FontSize>
           </BackgroundLibery>
+          <div className="p-3">
+            <CookiesStyles>Cookies</CookiesStyles>
+          </div>
         </BackgrondContainer>
       </section>
     </>

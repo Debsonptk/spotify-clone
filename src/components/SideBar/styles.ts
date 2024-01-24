@@ -15,3 +15,9 @@ export const BackgroundLibery = styled.div`
   background-color: #242424;
   border-radius: 8px;
 `
+export const FontSize = styled.span`
+  font-size: 12px;
+`
+export const CookiesStyles = styled.span`
+  color: #b3b3b3;
+`

@@ -1,5 +1,7 @@
 import { memo, useEffect } from 'react'
 
+import { Col, Row } from 'react-bootstrap'
+
 import SideBar from 'components/SideBar'
 
 import useTitle from 'hooks/useTitle'
@@ -16,7 +18,11 @@ const Home: React.FC = () => {
 
   return (
     <ContainerBackground>
-      <SideBar />
+      <Row className="d-flex row-cols-1 row-cols-md-4">
+        <Col>
+          <SideBar />
+        </Col>
+      </Row>
     </ContainerBackground>
   )
 }
