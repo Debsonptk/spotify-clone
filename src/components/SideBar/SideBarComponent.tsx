@@ -1,18 +1,23 @@
 import { memo } from 'react'
 
+import { FiGlobe } from 'react-icons/fi'
 import { GoHome } from 'react-icons/go'
 import { IoSearchOutline } from 'react-icons/io5'
 import { LuPlus } from 'react-icons/lu'
 import { VscLibrary } from 'react-icons/vsc'
+import { Link } from 'react-router-dom'
 
 import logo from 'assets/logo/logo-spotify.png'
 
 import {
   BackgrondContainer,
   BackgroundLibery,
+  Button,
+  ButtonLenguage,
   CookiesStyles,
   FontSize,
   ImageSize,
+  LinkStyle,
   TextColor,
 } from './styles'
 
@@ -20,15 +25,21 @@ const SideBar: React.FC = () => {
   return (
     <>
       <BackgrondContainer className="p-3 mb-2 mx-2">
-        <ImageSize src={logo} alt="Logo Spotify" className="img-fluid p-3" />
-        <div className="pb-3  px-3">
-          <GoHome color="#b3b3b3" size="30px" />
-          <TextColor className="px-3">Início</TextColor>
-        </div>
-        <div className="pb-3 px-3">
-          <IoSearchOutline color="#b3b3b3" size="30px" />
-          <TextColor className="p-3">Buscar</TextColor>
-        </div>
+        <Link to="">
+          <ImageSize src={logo} alt="Logo Spotify" className="img-fluid p-3" />
+        </Link>
+        <LinkStyle to="">
+          <div className="pb-3  px-3">
+            <GoHome color="#b3b3b3" size="30px" />
+            <TextColor className="px-3">Início</TextColor>
+          </div>
+        </LinkStyle>
+        <LinkStyle to="">
+          <div className="pb-3 px-3">
+            <IoSearchOutline color="#b3b3b3" size="30px" />
+            <TextColor className="p-3">Buscar</TextColor>
+          </div>
+        </LinkStyle>
       </BackgrondContainer>
       <section>
         <BackgrondContainer className="p-3 mb-2 mx-2">
@@ -42,6 +53,9 @@ const SideBar: React.FC = () => {
             <FontSize className="text-white pt-1 px-3 pb-3">
               É fácil, vamos te ajudar.
             </FontSize>
+            <div className="pb-3 px-3">
+              <Button type="button">Criar Playlist</Button>
+            </div>
           </BackgroundLibery>
           <BackgroundLibery className="d-flex flex-column">
             <h6 className="text-white pt-3 px-3">
@@ -50,9 +64,20 @@ const SideBar: React.FC = () => {
             <FontSize className="text-white pt-1 px-3 pb-3">
               Avisaremos você sobre novos episódios.
             </FontSize>
+            <div className="pb-3 px-3">
+              <Button type="button">Explore podcasts</Button>
+            </div>
           </BackgroundLibery>
           <div className="p-3">
             <CookiesStyles>Cookies</CookiesStyles>
+          </div>
+          <div className="pb-3 pt-2 px-3">
+            <ButtonLenguage type="button">
+              <span>
+                <FiGlobe color="white" size="18px" />
+              </span>
+              <span className="px-2">Português do Brasil</span>
+            </ButtonLenguage>
           </div>
         </BackgrondContainer>
       </section>

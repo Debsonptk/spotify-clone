@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 export const BackgrondContainer = styled.div`
@@ -20,4 +21,31 @@ export const FontSize = styled.span`
 `
 export const CookiesStyles = styled.span`
   color: #b3b3b3;
+`
+export const LinkStyle = styled(Link)`
+  text-decoration: none;
+`
+export const Button = styled.button`
+  padding: 5px 10px 5px 10px;
+  border-radius: 40px;
+  background-color: #f7f7f7;
+  color: #000;
+  border: none;
+  font-size: 15px;
+
+  &&:hover {
+    border: 2px solid #fff;
+  }
+`
+export const ButtonLenguage = styled.button`
+  padding: 5px 10px 5px 10px;
+  border-radius: 40px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 15px;
+  border: 1px solid #fff;
+
+  &&:hover {
+    border: 2px solid #fff;
+  }
 `
