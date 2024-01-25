@@ -24,22 +24,28 @@ import {
 const SideBar: React.FC = () => {
   return (
     <>
-      <BackgrondContainer className="p-3 mb-2">
-        <Link to="">
-          <ImageSize src={logo} alt="Logo Spotify" className="img-fluid p-3" />
-        </Link>
-        <LinkStyle to="">
-          <div className="pb-3  px-3">
+      <BackgrondContainer className="p-3 mb-2 mx-2">
+        <div>
+          <Link to="">
+            <ImageSize
+              src={logo}
+              alt="Logo Spotify"
+              className="img-fluid p-3"
+            />
+          </Link>
+        </div>
+        <div className="pb-3  px-3">
+          <LinkStyle to="">
             <GoHome color="#b3b3b3" size="30px" />
             <TextColor className="px-3">Início</TextColor>
-          </div>
-        </LinkStyle>
-        <LinkStyle to="">
-          <div className="pb-3 px-3">
+          </LinkStyle>
+        </div>
+        <div className="pb-3 px-3">
+          <LinkStyle to="">
             <IoSearchOutline color="#b3b3b3" size="30px" />
             <TextColor className="p-3">Buscar</TextColor>
-          </div>
-        </LinkStyle>
+          </LinkStyle>
+        </div>
       </BackgrondContainer>
       <section>
         <BackgrondContainer className="p-3 mb-2 mx-2">

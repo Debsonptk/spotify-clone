@@ -4,7 +4,10 @@ import styled from 'styled-components'
 export const BackgrondContainer = styled.div`
   background-color: #121212;
   border-radius: 8px;
+  flex: 1;
+  width: 25%;
 `
+
 export const ImageSize = styled.img`
   width: 120px;
 `
