@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const BackgroundColor = styled.div`
   background-color: #a03aa5;
 `
+
 export const SizeSubtitle = styled.span`
   font-size: 13px;
 `

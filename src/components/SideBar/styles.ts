@@ -1,19 +1,32 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
-export const BackgrondContainer = styled.div`
-  background-color: #121212;
+export const SideBarContainer = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 350px;
+  background-color: #000;
   border-radius: 8px;
-  flex: 1;
-  width: 25%;
+  padding: 10px;
 `
-
 export const ImageSize = styled.img`
   width: 120px;
+`
+export const NavSection = styled.div`
+  background-color: #121212;
+  border-radius: 8px;
+`
+export const LinkStyle = styled(Link)`
+  text-decoration: none;
 `
 export const TextColor = styled.span`
   width: 120px;
   color: #b3b3b3;
+`
+export const UlStyled = styled.ul`
+  list-style-type: none;
+  padding: 0;
 `
 export const BackgroundLibery = styled.div`
   background-color: #242424;
@@ -21,12 +34,6 @@ export const BackgroundLibery = styled.div`
 `
 export const FontSize = styled.span`
   font-size: 12px;
-`
-export const CookiesStyles = styled.span`
-  color: #b3b3b3;
-`
-export const LinkStyle = styled(Link)`
-  text-decoration: none;
 `
 export const Button = styled.button`
   padding: 5px 10px 5px 10px;
@@ -39,6 +46,10 @@ export const Button = styled.button`
   &&:hover {
     border: 1px solid #fff;
   }
+`
+export const CookiesStyles = styled.span`
+  color: #b3b3b3;
+  font-size: 15px;
 `
 export const ButtonLenguage = styled.button`
   padding: 5px 10px 5px 10px;
