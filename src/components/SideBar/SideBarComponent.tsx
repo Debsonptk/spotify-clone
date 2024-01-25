@@ -24,7 +24,7 @@ import {
 const SideBar: React.FC = () => {
   return (
     <>
-      <BackgrondContainer className="p-3 mb-2 mx-2">
+      <BackgrondContainer className="p-3 mb-2">
         <Link to="">
           <ImageSize src={logo} alt="Logo Spotify" className="img-fluid p-3" />
         </Link>
@@ -54,7 +54,9 @@ const SideBar: React.FC = () => {
               É fácil, vamos te ajudar.
             </FontSize>
             <div className="pb-3 px-3">
-              <Button type="button">Criar Playlist</Button>
+              <Button type="button">
+                <strong>Criar Playlist</strong>
+              </Button>
             </div>
           </BackgroundLibery>
           <BackgroundLibery className="d-flex flex-column">
@@ -65,13 +67,15 @@ const SideBar: React.FC = () => {
               Avisaremos você sobre novos episódios.
             </FontSize>
             <div className="pb-3 px-3">
-              <Button type="button">Explore podcasts</Button>
+              <Button type="button">
+                <strong>Explore podcasts </strong>
+              </Button>
             </div>
           </BackgroundLibery>
           <div className="p-3">
             <CookiesStyles>Cookies</CookiesStyles>
           </div>
-          <div className="pb-3 pt-2 px-3">
+          <div className="pb-4 pt-2 px-3">
             <ButtonLenguage type="button">
               <span>
                 <FiGlobe color="white" size="18px" />

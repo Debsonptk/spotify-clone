@@ -34,7 +34,7 @@ export const Button = styled.button`
   font-size: 15px;
 
   &&:hover {
-    border: 2px solid #fff;
+    border: 1px solid #fff;
   }
 `
 export const ButtonLenguage = styled.button`
