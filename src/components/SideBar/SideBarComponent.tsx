@@ -83,7 +83,7 @@ const SideBar: React.FC = () => {
             <span>
               <FiGlobe color="white" size="18px" />
             </span>
-            <span className="px-2">Português do Brasil</span>
+            <span className="px-2 pt-3">Português do Brasil</span>
           </ButtonLenguage>
         </div>
       </NavSection>

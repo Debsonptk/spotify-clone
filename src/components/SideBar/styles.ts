@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 export const SideBarContainer = styled.div`
-  position: fixed;
   top: 0;
   left: 0;
   width: 350px;
