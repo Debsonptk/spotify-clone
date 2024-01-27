@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const BackgroundColor = styled.div`
-  background-color: #a03aa5;
+  background: linear-gradient(to right, #ae2996, #697ddb);
 `
 
 export const SizeSubtitle = styled.span`
