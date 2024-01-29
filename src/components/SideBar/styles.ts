@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export const SideBarContainer = styled.div`
   top: 0;
   left: 0;
-  width: 350px;
+  width: 320px;
   background-color: #000;
   border-radius: 8px;
   padding: 10px;
@@ -50,6 +50,11 @@ export const CookiesStyles = styled.span`
   color: #b3b3b3;
   font-size: 15px;
 `
+export const FixedBar = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+`
 export const ButtonLenguage = styled.button`
   padding: 5px 10px 5px 10px;
   border-radius: 40px;
@@ -57,6 +62,50 @@ export const ButtonLenguage = styled.button`
   color: #fff;
   font-size: 15px;
   border: 1px solid #fff;
+
+  &&:hover {
+    border: 2px solid #fff;
+  }
+`
+/* ESTILOS DO MAIN */
+
+export const MainContainer = styled.div`
+  max-width: 80vw;
+  max-height: 100vh;
+  margin-left: 320px;
+  margin-right: 30px;
+`
+export const HeaderNavigation = styled.nav`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  margin: 5px;
+`
+export const ContainerContent = styled.div`
+  border-radius: 8px;
+  background-color: #121212;
+`
+
+export const TransparentButton = styled.button`
+  background: transparent;
+  border: none;
+  cursor: pointer;
+`
+export const HeaderSearch = styled.input`
+  border: none;
+  background: #242424;
+  color: #fff;
+`
+export const SearchContainer = styled.div`
+  border: none;
+  border-radius: 32px;
+  background: #242424;
+  padding: 0px 120px 0 12px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  outline: none;
 
   &&:hover {
     border: 2px solid #fff;
