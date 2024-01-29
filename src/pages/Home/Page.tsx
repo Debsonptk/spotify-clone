@@ -1,6 +1,7 @@
 import { memo, useEffect } from 'react'
 
 import Footer from 'components/Footer'
+import Main from 'components/Main'
 import SideBar from 'components/SideBar'
 
 import useTitle from 'hooks/useTitle'
@@ -18,6 +19,7 @@ const Home: React.FC = () => {
   return (
     <ContainerBackground>
       <SideBar />
+      <Main />
       <Footer />
     </ContainerBackground>
   )
