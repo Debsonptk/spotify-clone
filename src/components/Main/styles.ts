@@ -50,3 +50,25 @@ export const Button = styled.button`
   border: none;
   font-size: 13px;
 `
+export const OfferScrollContainer = styled.div`
+  max-height: 43vh;
+  margin: 24px;
+  overflow-y: auto;
+
+  /* Estilo para a barra de rolagem */
+  &::-webkit-scrollbar {
+    width: 1px;
+  }
+
+  /* Estilo para o "polegar" da barra de rolagem */
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+`
+export const OfferListItem = styled.section`
+  display: grid; /* define o modelo de layout do elemento como uma grade */
+  gap: 16px;
+  grid-gap: 32px; /* não é usado mais */
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+`
