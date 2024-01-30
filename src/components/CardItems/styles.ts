@@ -22,3 +22,6 @@ export const ImageStyle = styled.img`
   width: 107px;
   transform: rotate(25deg) translate(18%, -2%);
 `
+export const SpanColor = styled.span`
+  color: #575757;
+`

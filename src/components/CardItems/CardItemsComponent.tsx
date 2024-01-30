@@ -5,14 +5,19 @@ import { CardContainer, ImageStyle, SpanStyled } from './styles'
 interface ICardItemsProps {
   subtitle: string
   image: string
+  backgroundColor?: string
 }
 
-const CardItems: React.FC<ICardItemsProps> = ({ subtitle, image }) => {
+const CardItems: React.FC<ICardItemsProps> = ({
+  subtitle,
+  image,
+  backgroundColor,
+}) => {
   return (
-    <CardContainer to="">
+    <CardContainer to="" style={{ backgroundColor }}>
       <div>
         <ImageStyle src={image} alt="" className="img-fluid" />
-        <SpanStyled>{subtitle}</SpanStyled>
+        <SpanStyled className="text-white">{subtitle}</SpanStyled>
       </div>
     </CardContainer>
   )
