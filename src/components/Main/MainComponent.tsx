@@ -1,7 +1,14 @@
 import { memo } from 'react'
 
 import { CiSearch } from 'react-icons/ci'
-import { FaAngleRight, FaAngleLeft } from 'react-icons/fa6'
+import { FaInstagram } from 'react-icons/fa'
+import {
+  FaAngleRight,
+  FaAngleLeft,
+  FaXTwitter,
+  FaFacebook,
+} from 'react-icons/fa6'
+import { Link } from 'react-router-dom'
 
 import card1 from 'assets/images/1.jpeg'
 import card2 from 'assets/images/10.jpeg'
@@ -102,7 +109,7 @@ const Main: React.FC = () => {
                 ))}
               </OfferListItem>
             </OfferScrollContainer>
-            <div className="d-flex pt-5 px-4 justify-content-between">
+            <div className="d-flex pt-5 px-4 justify-content-between border-bottom">
               <div>
                 <h6 className="text-white">Empresa</h6>
                 <div>
@@ -115,7 +122,7 @@ const Main: React.FC = () => {
                   <SpanColor>For the Record</SpanColor>
                 </div>
               </div>
-              <div>
+              <div className="pb-5">
                 <h6 className="text-white">Comunidades</h6>
                 <div>
                   <SpanColor>Para Artistas</SpanColor>
@@ -142,6 +149,28 @@ const Main: React.FC = () => {
                   <SpanColor>Aplicativo móvel grátis</SpanColor>
                 </div>
               </div>
+              <div className="px-5">
+                <Link
+                  to="https://www.instagram.com/spotify/"
+                  target="_blank"
+                  className="px-1"
+                >
+                  <FaInstagram size="25px" color="white" />
+                </Link>
+                <Link
+                  to="https://twitter.com/spotify"
+                  target="_blank"
+                  className="px-3"
+                >
+                  <FaXTwitter size="25px" color="white" />
+                </Link>
+                <Link to="https://www.facebook.com/Spotify" target="_blank">
+                  <FaFacebook size="25px" color="white" />
+                </Link>
+              </div>
+            </div>
+            <div className="pt-5 pb-5 px-3">
+              <SpanColor>© 2024 Spotify AB</SpanColor>
             </div>
           </ContainerContent>
         </MainContainer>
