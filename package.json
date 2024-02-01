@@ -54,6 +54,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "jsdom": "^23.2.0",
+    "json-server": "^1.0.0-alpha.23",
     "pre-commit": "^1.2.2",
     "prettier": "^3.1.1",
     "typescript": "^5.3.3",

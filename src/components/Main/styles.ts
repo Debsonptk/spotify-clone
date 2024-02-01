@@ -67,8 +67,8 @@ export const OfferScrollContainer = styled.div`
 `
 export const OfferListItem = styled.section`
   display: grid; /* define o modelo de layout do elemento como uma grade */
-  gap: 16px;
-  grid-gap: 32px; /* não é usado mais */
+  gap: 10px;
+  grid-gap: 20px; /* não é usado mais */
   margin: 0 auto;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 `
