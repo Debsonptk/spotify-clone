@@ -52,10 +52,16 @@ const SideBar: React.FC = () => {
           </UlStyled>
         </NavSection>
         <NavSection className="mt-2 pt-3 px-3 pb-3">
-          <div className="px-3 mb-3">
-            <VscLibrary color="#b3b3b3" size="30px" />
-            <TextColor className="p-3">Sua Biblioteca</TextColor>
-            <LuPlus color="#b3b3b3" size="20px" />
+          <div className="px-3 mb-3 d-flex justify-content-between">
+            <div>
+              <VscLibrary color="#b3b3b3" size="30px" />
+            </div>
+            <div>
+              <TextColor className="p-3">Sua Biblioteca</TextColor>
+            </div>
+            <div>
+              <LuPlus color="#b3b3b3" size="20px" />
+            </div>
           </div>
           <BackgroundLibery className="d-flex flex-column mb-4">
             <h6 className="text-white pt-3 px-3">Crie sua primeira playlist</h6>
