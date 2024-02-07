@@ -98,7 +98,7 @@ const Main: React.FC = () => {
           <ContainerContent className="p-3">
             <h4 className="text-white px-4">Navegar por todas as seções</h4>
             <OfferScrollContainer>
-              <OfferListItem className="g-1">
+              <OfferListItem>
                 {cardsArray.map((card) => (
                   <CardItems
                     key={card.id}

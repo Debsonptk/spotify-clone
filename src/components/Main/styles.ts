@@ -57,14 +57,15 @@ export const OfferScrollContainer = styled.div`
 
   /* Estilo para a barra de rolagem */
   &::-webkit-scrollbar {
-    width: 1px;
+    width: 10px; /* Ajuste a largura conforme necessário */
   }
 
-  /* Estilo para o "polegar" da barra de rolagem */
   &::-webkit-scrollbar-thumb {
-    background-color: transparent;
+    background-color: #888;
+    border-radius: 6px;
   }
 `
+
 export const OfferListItem = styled.section`
   display: grid; /* define o modelo de layout do elemento como uma grade */
   gap: 10px;
